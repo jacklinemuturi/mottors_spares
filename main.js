@@ -66,5 +66,27 @@ $(document).ready(function(){
             }
         });
     });
+    // resetpassword
+    $("#reset_password").click(function(event){ 
+        // ajax post
+        $.post("update_password.php",
+        // ajax data
+        {
+            username         :$('#username').val(),
+            new_password     :$('#new_password').val(),
+            confirm_password :$('#confirm_password').val()
+        },
+        // ajax callback
+        function(response)
+        {
+            if(response == "successfull")
+            {
+
+                window.location.href = "login.php";
+            }else{
+                $('#resetresponse').html(response);
+            }
+        });
+    });
     
 });
