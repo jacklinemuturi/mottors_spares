@@ -47,7 +47,7 @@
                                  <!-- Material input phonenumber -->
                                 <div class="md-form">
                                     <i class="fa fa-envelope prefix grey-text"></i>
-                                    <input type="text" id="phonenumber" class="form-control" placeholder="Phonenumber">
+                                    <input type="text" id="phone" class="form-control" placeholder="Phonenumber">
                                 </div><br>
                                 <!-- Material input password-->
                                 <div class="md-form">

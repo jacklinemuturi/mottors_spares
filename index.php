@@ -1,12 +1,12 @@
 <?php
     session_start();    
 
-    // if(!isset($_SESSION['phonenumber']))    
-    // {
-    //     header("Location:login.php");
-    // }
+    if(!isset($_SESSION['mottor']))    
+    {
+        header("Location:login.php");
+    }
 
-    // require_once "functions.php";
+    require_once "functions.php";
 
     // $isActive = returnValue("users","status","phonenumber",$_SESSION['mottor']);
     // if($isActive == "pending")

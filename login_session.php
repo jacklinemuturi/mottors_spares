@@ -18,7 +18,7 @@ if(empty($login_username) || empty($login_password))
 
 $encpass  = md5($login_password);
 
-$select = mysqli_query($conn, "SELECT FROM `users` WHERE `user_name`='$login_username' AND `password`='$encpass'");
+$select = mysqli_query($conn,"SELECT * FROM `users` WHERE `user_name`='$login_username' AND `password`='$encpass'");
 if(mysqli_num_rows($select) > 0)
 {
     $phone   = returnValue("users","phonenumber","user_name",$login_username);
