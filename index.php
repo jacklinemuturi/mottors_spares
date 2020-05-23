@@ -8,7 +8,7 @@
 
     // require_once "functions.php";
 
-    // $isActive = returnValue("users","status","phonenumber",$_SESSION['phonenumber']);
+    // $isActive = returnValue("users","status","phonenumber",$_SESSION['mottor']);
     // if($isActive == "pending")
     // {
     //     header("Location:activation.php");
