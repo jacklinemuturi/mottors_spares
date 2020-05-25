@@ -44,7 +44,7 @@
                             <div class="card-body">
                                     <!-- Material input email -->
                                     <p style="font-size:20px;">Activate account</p>
-                                    <p>Code sent to <b><?php echo $_SESSION['mottor']; ?></b></p>
+                                    <p>Code sent to <b><?php echo $_SESSION['mottor'];?></b></p>
                                     <p id="activationresponse" class="h5 text-center text-danger py-4" style="color:#32c787;"></p>
                                     <div class="md-form">
                                         <input type="number" id="activation_code" class="form-control" placeholder="Enter code">

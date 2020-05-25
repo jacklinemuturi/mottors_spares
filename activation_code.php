@@ -12,17 +12,17 @@ if(isset($_REQUEST['activation_code']))
        die("Please fill the field!");
     }
     
-    $sendsms    = "+254".substr($_SESSION['mottor'],-9);
+    $mottor     = "+254".substr($_SESSION['mottor'],-9);
     $message    = "Welcome,your account is now active.";
     $savedcode  = returnValue("users","code","phonenumber",$_SESSION['mottor']); 
 
         if($activation_code == $savedcode)
         {
-            $active = "UPDATE `users` FROM `pending`=`active` WHERE `phonenumber` = '{$_SESSION['mottor']}'";
+            $sql = "UPDATE `users` FROM `pending`=`active` WHERE `phonenumber` = '{$_SESSION['mottor']}'";
         }
-        if(mysqli_qery($conn,$active))
+        if(mysqli_qery($conn,$sql))
         {
-            sendmessage($sendsms,$message);
+            sendmessage($mottor,$message);
             echo "successfull";
         }else{
             echo mysqli_error($conn);

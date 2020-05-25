@@ -28,7 +28,7 @@
                     <div class="col-5">
                                 <!-- Card -->
                         <div class="card animated fadeInLeft" style="margin-top:100px;">
-                                <h5 class="sign" style="margin-left:200px;margin-top:50px;font-size:20px;color:skyblue;">signIn</h5>
+                                <h5 class="sign" style="text-align:center;margin-top:50px;font-size:20px;color:skyblue;">signIn</h5>
                                 <!-- Card body -->
                             <div class="card-body">
                                 <p id="loginresponse" class="h5 text-center text-danger py-4" style="color:#32c787;"></p>

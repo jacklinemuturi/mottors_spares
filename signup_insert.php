@@ -67,7 +67,7 @@ if(isset($_REQUEST['oname']) && isset($_REQUEST['bname']) && isset($_REQUEST['us
 
     $hashedpassword   = md5($password);
 
-    $editphone = "+254".substr($phone,-9);
+    $editphone   = "+254".substr($phone,-9);
     $message     = "Hello ".$bname.", your activation code is" .$code;
 
     $sql = "INSERT INTO `users`(`business_owner`,`business_name`,`user_name`,`phonenumber`,`password`,`status`,`created`,`code`)
