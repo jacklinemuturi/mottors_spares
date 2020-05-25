@@ -21,7 +21,7 @@ require_once 'functions.php';
         }
         if(mysqli_num_rows(mysqli_query($conn, "SELECT * FROM `users` WHERE `user_name`='username'") < 1));
         {
-            die("Sorry userName does not exist!");
+            die("Sorry, Username does not exist!");
         }
 
         $encript = md5($new_password);

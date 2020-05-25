@@ -55,4 +55,4 @@
         <script src="jquery.js"></script>
         <script src="main.js"></script> 
     </body>
-</html>
+</htm>
