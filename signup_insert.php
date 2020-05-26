@@ -71,7 +71,7 @@ if(isset($_REQUEST['oname']) && isset($_REQUEST['bname']) && isset($_REQUEST['us
     $message     = "Hello ".$bname.", your activation code is" .$code;
 
     $sql = "INSERT INTO `users`(`business_owner`,`business_name`,`user_name`,`phonenumber`,`password`,`status`,`created`,`code`)
-            VALUE('$oname','$bname','$users','$phone','$hashedpassword','$status','$created','$code')";
+            VALUES('$oname','$bname','$users','$phone','$hashedpassword','$status','$created','$code')";
 
     if(mysqli_query($conn,$sql))
     {

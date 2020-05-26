@@ -1,10 +1,10 @@
 <?php
     session_start();    
 
-    if(!isset($_SESSION['mottor']))    
-    {
-        header("Location:login.php");
-    }
+    // if(!isset($_SESSION['mottor']))    
+    // {
+    //     header("Location:login.php");
+    // }
 
     require_once "functions.php";
 
@@ -17,7 +17,6 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Mar 2020 08:18:32 GMT -->
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,15 +44,15 @@
                 </div>
 
                 <div class="header__logo hidden-sm-down">
-                    <h1><a href="index.html">Material Admin 2.0</a></h1>
+                    <h1><a href="index.html">MOTTOR_AUTO SPARE SELLERS</a></h1>
                 </div>
-
+<!-- search input
                 <form class="search">
                     <div class="search__inner">
                         <input type="text" class="search__text" placeholder="Search for people, files, documents...">
                         <i class="zmdi zmdi-search search__helper" data-ma-action="search-close"></i>
                     </div>
-                </form>
+                </form> -->
 
                 <ul class="top-nav">
                     <li class="hidden-xl-up"><a href="#" data-ma-action="search-open"><i class="zmdi zmdi-search"></i></a></li>
@@ -82,7 +81,7 @@
                                 </a>
 
                                 <a href="#" class="listview__item">
-                                    <img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
+                                    <img src="demo/img/005.jpeg" class="listview__img" alt="">
 
                                     <div class="listview__content">
                                         <div class="listview__heading">
@@ -550,36 +549,9 @@
                     </div> -->
                 </div>
             </section>
-            <!-- section close -->
-        <!-- Javascript -->
-        <!-- Vendors -->
-        <script src="vendors/jquery/jquery.min.js"></script>
-        <script src="vendors/popper.js/popper.min.js"></script>
-        <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-        <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-        <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+        <script src="jquery.js"></script>
+        <script src="main.js"></script>
 
-        <script src="vendors/flot/jquery.flot.js"></script>
-        <script src="vendors/flot/jquery.flot.resize.js"></script>
-        <script src="vendors/flot.curvedlines/curvedLines.js"></script>
-        <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
-        <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
-        <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
-        <script src="vendors/salvattore/salvattore.min.js"></script>
-        <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
-        <script src="vendors/moment/moment.min.js"></script>
-        <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
-
-        <!-- Charts and maps-->
-        <script src="demo/js/flot-charts/curved-line.js"></script>
-        <script src="demo/js/flot-charts/dynamic.js"></script>
-        <script src="demo/js/flot-charts/line.js"></script>
-        <script src="demo/js/flot-charts/chart-tooltips.js"></script>
-        <script src="demo/js/other-charts.js"></script>
-        <script src="demo/js/jqvmap.js"></script>
-
-        <!-- App functions and actions -->
-        <script src="js/app.min.js"></script>
     </body>
 
 <!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Mar 2020 08:20:21 GMT -->

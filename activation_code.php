@@ -18,7 +18,7 @@ if(isset($_REQUEST['activation_code']))
 
         if($activation_code == $savedcode)
         {
-            $sql = "UPDATE `users` FROM `pending`=`active` WHERE `phonenumber` = '{$_SESSION['mottor']}'";
+            $sql = "UPDATE `users` SET `pending`=`active` WHERE `phonenumber` = '{$_SESSION['mottor']}'";
         }
         if(mysqli_qery($conn,$sql))
         {
